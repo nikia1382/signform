@@ -1,92 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="sign.css">
-    <script src="https://kit.fontawesome.com/fa89ad7c38.js" crossorigin="anonymous"></script>
-
-
-    <title>signup form</title>
-</head>
-<body>
-
-  <div class="container-fluid my-background">
-            <div class="container" >
-           <div class="row justify-content-center "> 
-             <div class="col-8 col-md-5 col-lg-7 col-xl-6 col-xxl-5"> 
-               <div class="card border border-light-subtle rounded-7" > 
-                 <div class="card-body p-3 p-md-4 p-xl-5 mx-4" > 
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="mb-3">
-                        <div class="text-center mb-4">
-                          <a href="#!">
-                            <img src="" alt="nothing for free:))" width="175" height="57">
-                          </a>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+      <link rel="stylesheet" href="sign.css">
+      <script src="https://kit.fontawesome.com/fa89ad7c38.js" crossorigin="anonymous"></script>
+  
+      <title>Signup Forms</title>
+  </head>
+  <body>
+  
+    <div class="container-fluid my-background vh-100 d-flex justify-content-center align-items-center">
+        <div class="text-center">
+            <a href="#!"> 
+                <img src="http://192.168.253.90:2003/images/logo.png" alt="Logo" style="width: 70px; height: 100px;" >
+            </a>
+            <div class="card border border-light-subtle rounded-7" style="width: 100%; max-width: 400px;">
+                <div class="card-body p-3 p-md-4 p-xl-5 mx-4"> 
+                    <h2 class="h4 text-center text-white">ورود به سامانه</h2>
+                    <h3 class="fs-6 fw-normal text-secondary text-center m-1 text-white">برای ورود به حساب کاربری خود با کدملی (یا شناسه اتباع) و گذرواژه وارد شوید</h3>
+                    <form action="#!">
+                      <div class="row gy-3">
+                        <div class="col-12">
+                          <div class="input-group form-group">
+                            <span class="input-group-text" style="height: 40px;"><i class="fas fa-user bg-secondary"></i></span>
+                            <input type="text" class="form-control" placeholder="username" aria-label="Username" required>
+                          </div>
                         </div>
-                        <h2 class="h4 text-center">فرم ورود</h2>
-                        <h3 class="fs-6 fw-normal text-secondary text-center m-1">اطلاعات  را به درستی و با دقت وارد کنید</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <form action="#!">
-                    <div class="row gy-3 overflow-hidden">
-                      <div class="col-12">
-                        <div class="form-floating mb-1">
-                          <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First Name" required>
-                          <label for="firstName" class="form-label">نام </label>
+                        <div class="col-12">
+                          <div class="input-group form-group">
+                            <span class="input-group-text" style="height: 40px;"><i class="fas fa-key"></i></span>
+                            <input type="password" class="form-control" placeholder="password" aria-label="Password" required>
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="form-floating mb-1">
-                          <input type="text" class="form-control" name="lastName" id="lastName" placeholder="First Name" required>
-                          <label for="lastName" class="form-label">نام خانوادگی</label>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <label class="form-check-label text-white" for="iAgree">
+                              <span class="">گذرموقت/رمز عبور</span>
+                            </label>
+                          </div>
                         </div>
-                      </div>
-                     
-                      <div class="col-12">
-                        <div class="form-floating mb-3">
-                          <input type="password" class="form-control" name="password" id="password" value="" placeholder="Password" required>
-                          <label for="password" class="form-label">گذرواژه</label>
+                        <div class="col-12">
+                          <div class="d-grid">
+                            <button class="btn" style="background-color: rgba(167, 206, 148, 0.958); color: #ffffff;" type="submit">ورود</button>
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" name="iAgree" id="iAgree" required>
-                          <label class="form-check-label text-secondary" for="iAgree">
-                             <a href="#!" class="link-primary text-decoration-none">تمامی قوانین سایت را قبول می کنم</a>
-                          </label>
+                        <div class="col-12">
+                          <div class="d-grid">
+                            <button class="btn" style="background-color: rgba(255, 255, 255, 0.306); color: #ffffff;" type="button">ثبت نام</button>
+                          </div>
                         </div>
                       </div>
-                      <div class="col-12">
-                        <div class="d-grid">
-                          <button class="btn btn-primary" type="submit">ورود</button>
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="d-grid">
-                          <button class="btn  btn-success" type="submit">ثبت نام</button>
-                        </div>
-                      </div>
-    
-                    </div>
-                  </form>
-                  <div class="row">
-                    <div class="col-12">
-                      <hr class="mt-5 mb-4 border-secondary-subtle">
-                      <p class="m-0 text-secondary text-center">ایا حساب کاربری از قبل ایجاد کرده اید؟<a href="#!" class="link-primary text-decoration-none "> وارد شوید</a></p>
-                    </div>
-
-
-</div>
-
-              </div>
-
-
-
-
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  </body>
+  </html>
 
 
